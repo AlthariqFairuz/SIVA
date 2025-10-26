@@ -16,9 +16,9 @@ import { Button } from '@/components/ui/button'
 
 const navigation = [
   { name: 'Dashboard', href: '/dashboard', icon: LayoutDashboard },
-  { name: 'Upload Dokumen', href: '/upload', icon: Upload },
-  { name: 'Verifikasi', href: '/verification', icon: CheckCircle2 },
-  { name: 'Analytics', href: '/analytics', icon: BarChart3 },
+  { name: 'Upload Dokumen', href: '/dashboard/upload', icon: Upload },
+  { name: 'Verifikasi', href: '/dashboard/verification', icon: CheckCircle2 },
+  { name: 'Analytics', href: '/dashboard/analytics', icon: BarChart3 },
 ]
 
 export function Sidebar() {

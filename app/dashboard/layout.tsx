@@ -1,6 +1,6 @@
 'use client'
 
-import { Sidebar, Header } from '@/components/layout/sidebar'
+import { Sidebar } from '@/components/layout/sidebar'
 
 export default function DashboardLayout({
   children,
