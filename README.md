@@ -76,26 +76,4 @@ Frontend ini menggunakan **dummy API** di `lib/api.ts` untuk simulasi. Semua fun
 - `uploadDocument()` - Simulasi upload
 - `getAnalytics()` - Generate data analytics dummy
 
-**Untuk production**, ganti semua fungsi di `lib/api.ts` dengan HTTP requests ke backend sebenarnya:
-
-```typescript
-// Contoh untuk production
-export async function verifyDocument(file: File): Promise<VerificationResult> {
-  const formData = new FormData()
-  formData.append('file', file)
-  
-  const response = await fetch('/api/verify', {
-    method: 'POST',
-    body: formData,
-  })
-  
-  return response.json()
-}
-```
-
-## Integrasi Backend
-
-1. Update `lib/api.ts` dengan URL backend yang sebenarnya
-2. Tambahkan authentication (JWT, OAuth, dll)
-3. Handle error states dengan proper error handling
 4. Tambahkan loading states untuk UX yang lebih baik
