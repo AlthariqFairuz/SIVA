@@ -75,5 +75,3 @@ Frontend ini menggunakan **dummy API** di `lib/api.ts` untuk simulasi. Semua fun
 - `verifyDocumentsBatch()` - Simulasi batch processing (2.1 detik/dokumen)
 - `uploadDocument()` - Simulasi upload
 - `getAnalytics()` - Generate data analytics dummy
-
-4. Tambahkan loading states untuk UX yang lebih baik
